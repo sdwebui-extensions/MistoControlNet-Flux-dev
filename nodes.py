@@ -12,7 +12,7 @@ import torch.nn.functional as F
 
 dir_TheMistoModel = os.path.join(folder_paths.models_dir, "TheMisto_model")
 os.makedirs(dir_TheMistoModel, exist_ok=True)
-folder_paths.folder_names_and_paths["TheMisto_model"] = ([dir_TheMistoModel], folder_paths.supported_pt_extensions)
+folder_paths.folder_names_and_paths["TheMisto_model"] = ([dir_TheMistoModel, os.path.join(folder_paths.cache_dir, "TheMisto_model")], folder_paths.supported_pt_extensions)
 
 class LATENT_PROCESSOR_COMFY:
     def __init__(self):
